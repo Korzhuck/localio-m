@@ -1,4 +1,6 @@
-# Localio
+# Localio-M
+
+Localio-M is fork of Localio which seems like not supported by author.
 
 Localio generates automatically localizable files for many platforms like Rails, Android, iOS, Java .properties files and JSON files using a centralized spreadsheet as source. The spreadsheet can be in Google Drive or a simple local Excel file.
 
@@ -6,7 +8,7 @@ Localio generates automatically localizable files for many platforms like Rails,
 
 Add this line to your application's Gemfile:
 
-    gem 'localio'
+    gem 'localio-m'
 
 And then execute:
 
@@ -14,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install localio
+    $ gem install localio-m
 
 ## Usage
 
@@ -23,7 +25,7 @@ You have to create a custom file, Locfile, similar to Rakefile or Gemfile, with 
 In your Locfile directory you can then execute
 
 ````
-localize
+localize-m
 ````
 
 and your localizable files will be created with the parameters specified in the Locfile. 
@@ -186,7 +188,7 @@ You may specify a `sheet` parameter, otherwise the first sheet will be used.
 Option                      | Description
 ----------------------------|-------------------------------------------------------------------------
 `:path`                     | (Req.) Path for your XLSX file.
-`:sheet`                    | (Req.) Index number (starting with 0) or name of the sheet w/ the data
+`:sheet`                    | (Req.) Index number (starting with 0) or name of the sheet w/ the data or array of numbers or names
 
 ````ruby
 source :xlsx,
